@@ -1,0 +1,39 @@
+suite tuto pour convertir cette fois de l'hexadecimal en decimal et l'inverse
+
+l'hexadecimal est en base 16 et le decimal en base10, le decimal 
+en hexadecimal : 
+0 1 2 3 4 5 6 7 8 9 A B C D E F == 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 
+
+
+pour faire la conversion de decimal vers hexadecimal, pour 52 ou 45 par exemple, il faut diviser par 16(car base16) 
+et garder le reste avec %
+exemple 
+52/16 = 3, reste:  4
+on prend le resultat et on refait
+3/16 = 0, reste 3
+
+45/16 = 2, reste 13
+2/16 = 0, reste 2
+
+une fois à 0 on arrête et on regarde de bas en haut. 
+maintenant on peut voir que 52 est egal à 34 en hexadecimal. 
+Pour 45, il faut refaire une étape. pourquoi? car je vous rappelle:
+ ce n'est pas 13, mais D 
+
+donc 45 = 2D en hexadecimal ! 
+
+maintenant faisons l'inverse, hexadecimal -> decimal
+
+reprenons 45 (2D)
+
+on va numeroter de droite à gauche nos nombres
+2 D
+| |
+1 0
+
+et on va faire de gauche à droite : 
+valeur * 16 puissance (numerotation) + ...
+par exemple pour 2D:
+2*16^1 + 13 * 16^0 = 45
+
+je repete, je suis débutant , si c'est mal expliqué contactez moi pour corriger/vous expliquer
